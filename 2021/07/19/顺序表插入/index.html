@@ -493,12 +493,51 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2><h3 id="顺序表插入"><a href="#顺序表插入" class="headerlink" title="顺序表插入"></a>顺序表插入</h3><p>`#include <iostream><br>#include”windows.h”<br>using namespace std;</iostream></p>
-<p>#define TRUE 1<br>#define FALSE 0<br>#define MaxSize 20<br>typedef int ElemType;<br>typedef struct<br>{<br>    ElemType data[MaxSize];<br>    int length;<br>}SqList;</p>
-<p>bool InitList(SqList &amp;L)<br>{<br>    L.length = 0;<br>    return true;<br>}</p>
-<p>bool ListInsert(SqList &amp;L, int i, ElemType e) {<br>    if (i&lt;1 || i&gt;L.length)<br>        return false;<br>    if (L.length &gt;= MaxSize)<br>        return false;<br>    for (int j = L.length; j &gt;= i; j–)<br>        L.data[j] = L.data[j - 1];<br>    L.data[i - 1] = e;<br>    L.length++;<br>    return true;<br>}</p>
-<p>int main()<br>{<br>    int t,k;<br>    SqList L;<br>    InitList(L);<br>    cin &gt;&gt; t;<br>    for (k = 0; k &lt; t; k++)<br>        cin &gt;&gt; L.data[k];<br>    L.length = t;<br>    ListInsert(L, 2, 9);<br>    for (int n = 0; n &lt; L.length; n++)<br>        printf( “L.data[%d]=%d\n”,n , L.data[n]);<br>}`</p>
+                <h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2><h3 id="顺序表插入"><a href="#顺序表插入" class="headerlink" title="顺序表插入"></a>顺序表插入</h3><pre class="line-numbers language-none"><code class="language-none">#include &lt;iostream&gt;
+#include&quot;windows.h&quot;
+using namespace std;
 
+#define TRUE 1
+#define FALSE 0
+#define MaxSize 20          
+typedef int ElemType;      
+typedef struct
+&#123;
+	ElemType data[MaxSize]; 
+	int length;            
+&#125;SqList;
+
+bool InitList(SqList &amp;L)
+&#123;
+	L.length &#x3D; 0;
+	return true;
+&#125;
+
+bool ListInsert(SqList &amp;L, int i, ElemType e) &#123;
+	if (i&lt;1 || i&gt;L.length)
+		return false;
+	if (L.length &gt;&#x3D; MaxSize)
+		return false;
+	for (int j &#x3D; L.length; j &gt;&#x3D; i; j--)
+		L.data[j] &#x3D; L.data[j - 1];
+	L.data[i - 1] &#x3D; e;
+	L.length++;
+	return true;
+&#125;
+
+int main()
+&#123;
+	int t,k;
+	SqList L;
+	InitList(L);
+	cin &gt;&gt; t;
+	for (k &#x3D; 0; k &lt; t; k++)
+		cin &gt;&gt; L.data[k];
+	L.length &#x3D; t;
+	ListInsert(L, 2, 9);
+	for (int n &#x3D; 0; n &lt; L.length; n++)
+		printf( &quot;L.data[%d]&#x3D;%d\n&quot;,n , L.data[n]);
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
