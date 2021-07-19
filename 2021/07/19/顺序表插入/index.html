@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="HTML基础, Universe">
+    <meta name="keywords" content="顺序表插入, Universe">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>HTML基础 | Universe</title>
+    <title>顺序表插入 | Universe</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -311,12 +311,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">HTML基础</h1>
+                    <h1 class="description center-align post-title">顺序表插入</h1>
                 </div>
             </div>
         </div>
@@ -432,12 +432,20 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/web%E5%89%8D%E7%AB%AF/">
-                                <span class="chip bg-color">web前端</span>
+                            <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+                                <span class="chip bg-color">数据结构</span>
                             </a>
                         
-                            <a href="/tags/html/">
-                                <span class="chip bg-color">html</span>
+                            <a href="/tags/c-c/">
+                                <span class="chip bg-color">c/c++</span>
+                            </a>
+                        
+                            <a href="/tags/%E9%A1%BA%E5%BA%8F%E8%A1%A8/">
+                                <span class="chip bg-color">顺序表</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%8F%92%E5%85%A5/">
+                                <span class="chip bg-color">插入</span>
                             </a>
                         
                     </div>
@@ -448,8 +456,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/HTML/" class="post-category">
-                                HTML
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="post-category">
+                                数据结构
                             </a>
                         
                     </div>
@@ -461,7 +469,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-06-20
+                    2021-07-19
                 </div>
                 
 
@@ -485,43 +493,11 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><h3 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h3><h4 id="网页与网站"><a href="#网页与网站" class="headerlink" title="网页与网站"></a>网页与网站</h4><p>.网站由网页够成<br>.网页内容包括：文字、图片、连接等元素<br>.网页是使用 html 超文本标记语言写的<br>.文件后缀名是 .html</p>
-<h4 id="浏览器与浏览器内核"><a href="#浏览器与浏览器内核" class="headerlink" title="浏览器与浏览器内核"></a>浏览器与浏览器内核</h4><p>.常见浏览器：谷歌、火狐、IE、Safari<br>.浏览器与对应使用的内核<br><img src="/2021/06/20/HTML%E5%9F%BA%E7%A1%80/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E6%A0%B8.png"></p>
-<h4 id="web标准"><a href="#web标准" class="headerlink" title="web标准"></a>web标准</h4><p>.W3C 万维网联盟<br>.标准的够成内容<br>   结构:结构用于对网页元素进行整理和分类，现阶段主要学的是HTML<br>   表现:表现用于设置网页元素的版式、颜色、大小等外观样式，主要指的是CSS<br>   行为:行为是指网页模型的定义及交互的编写，现阶段主要学的是Javascript</p>
-<h3 id="HTML基本结构"><a href="#HTML基本结构" class="headerlink" title="HTML基本结构"></a>HTML基本结构</h3><h4 id="语法规范"><a href="#语法规范" class="headerlink" title="语法规范"></a>语法规范</h4><p>.标签都使用&lt;&gt;包裹<br>.大部分成对出现，是双标签，单个出现是但标签<br>.标签由父子(包含)关系和兄弟(并列)关系</p>
-<h4 id="基本结构-骨架标签"><a href="#基本结构-骨架标签" class="headerlink" title="基本结构(骨架标签)"></a>基本结构(骨架标签)</h4><pre class="line-numbers language-none"><code class="language-none">&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;&lt;&#x2F;title&gt;
-    &lt;&#x2F;head&gt;
-    &lt;body&gt;
-    &lt;&#x2F;body&gt;
-&lt;&#x2F;html&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><img src="/2021/06/20/HTML%E5%9F%BA%E7%A1%80/%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84.png"></p>
-<h4 id="开发工具"><a href="#开发工具" class="headerlink" title="开发工具"></a>开发工具</h4><p>.代码编辑器有很多，原则就是自己用的顺手就可以了<br>.推举使用 VS Code<br>.VS Code常用快捷键<br>  .新建文件（Ctrl+N）<br>  .保存（Ctr+S），注意移动要保存为htm文件<br>  .Ctrl+加号键，Ctrl+减号键可以放大缩小视图<br>  .生成页面骨架结构，输入！按下Tab键<br>  .利用插件在浏览器中预览页面∶单击鼠标右键，在弹出出口中点击” Open In   Default Browser</p>
-<h4 id="骨架代码"><a href="#骨架代码" class="headerlink" title="骨架代码"></a>骨架代码</h4><p>.&lt;！DOCTYPE&gt;标签:文档类型声明标签，告诉浏览器这个页面采取html5版本来显示页面<br>.lang语言:告诉浏览器或者搜索引这是一个英文网站本页面采取英文来显示<br>.charset字符集:采取UF-8来保存文字。如果不写就会乱码<br>.标签语义:根据标签的语义，在合适的地方给一个最为合理的标签，可以让页面结构更清晰。    </p>
-<h3 id="常用标签"><a href="#常用标签" class="headerlink" title="常用标签"></a>常用标签</h3><h4 id="h系列-标题标签"><a href="#h系列-标题标签" class="headerlink" title="h系列-标题标签"></a>h系列-标题标签</h4><p>h1-&gt;h6 逐级递减</p>
-<h4 id="p标签，段落标签"><a href="#p标签，段落标签" class="headerlink" title="p标签，段落标签"></a>p标签，段落标签</h4><p>浏览器会自动适用换行</p>
-<h4 id="换行标签"><a href="#换行标签" class="headerlink" title="换行标签"></a>换行标签<br></h4><p>.强制换行<br>.单标签</p>
-<h4 id="文本格式化"><a href="#文本格式化" class="headerlink" title="文本格式化"></a>文本格式化</h4><p>.加粗：<code>strong&lt;/ strong＞</code>或者<code>&lt;b&gt;&lt;/b&gt;</code><br>.倾斜：<code>&lt;em&gt;&lt;/em&gt;</code>或者<code>&lt;i&gt;&lt;i/&gt;</code><br>.删除线：<code>&lt;del&gt;&lt;del/&gt;</code>或者<code>&lt;s&gt;&lt;/s&gt;</code><br>.下划线：<code>&lt;ins&gt;&lt;/ins&gt;</code>或者<code>&lt;u&gt;&lt;/u&gt;</code></p>
-<h4 id="无语义标签"><a href="#无语义标签" class="headerlink" title="无语义标签"></a>无语义标签</h4><p>．div<br>．span</p>
-<h4 id="图片标签"><a href="#图片标签" class="headerlink" title="图片标签"></a>图片标签<img></h4><p>属性<br>src: 图片的路径（来源）<br>alt：当图片加载错误时显示的文字<br>title:当鼠标悬停在图片上显示的文字<br>width:图片的宽度<br>height：图片的高度<br>border:图片的边框<br>属性的特点<br>1.属性之间部分先后顺序<br>2.属性名与属性值之间以键值对的形式存在<br>3.属性名与属性值之间以等号分隔   属性值要以引号包裹；</p>
-<h4 id="路径和连接"><a href="#路径和连接" class="headerlink" title="路径和连接"></a>路径和连接</h4><p>相对路径<br>.在同一个文件夹直接找名字<br>.向上一级  ../<br>.向下 /<br>绝对路径<br>链接标签  <code>&lt;a &gt;&lt;/a&gt; </code>####<br>．外部链接  <code>&lt;a href=&quot;http://www.qq.com&quot;&gt;&lt;/a&gt;</code>  写完整的 协议  域名   网址<br>．内部链接 <code>&lt;a href=&quot;index.html&quot;&gt;&lt;/a&gt;</code>   直接写文件名即可<br>属性<br>．href:指定跳转的页面<br>．title：鼠标悬停显示的文字<br>．target:  _self(默认会覆盖原来的窗口)   _blank(会以新的窗口打开)    窗口的打开方式<br>．#：会阻止页面跳转但是会刷新页面<br>锚点<br>．链接使用#<br>．目标标签id值与连接#号后面一致</p>
-<h4 id="注释与特殊字符"><a href="#注释与特殊字符" class="headerlink" title="注释与特殊字符"></a>注释与特殊字符</h4><p>.<code>&lt;!--我是注释--&gt;</code><br>  ．编辑器使用Ctrl+/ 快捷键<br><img src="/2021/06/20/HTML%E5%9F%BA%E7%A1%80/%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6.png"></p>
-<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><h4 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h4><p><code>&lt;table&gt;&lt;/table&gt;</code> 表格<br><code>&lt;tr&gt;&lt;/tr&gt;</code> 行<br><code>&lt;td&gt;&lt;/td&gt;</code> 单元格<br><code>&lt;th&gt;&lt;/th&gt; </code>表头    加粗  加黑 自动居中<br><code>&lt;caption&gt;&lt;/caption&gt; </code> 表格的标题   写在内部  显示外部  居中<br><code>&lt;thead&gt;&lt;/thead&gt;</code>  结构头<br><code>&lt;tbody&gt;&lt;/tbody&gt;</code>  结构体<br><code>&lt;tfoot&gt;&lt;/tfoot&gt;</code> 结构底</p>
-<h4 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h4><p>border:表格的边框   默认的0<br>width：宽度<br>height：高度<br>cellspacing:单元格与单元格之间的距离<br>cellspadding：单元格与内容之间的距离<br>align: left/center/right<br> 注意： 当给表格设置居中整个表格会居中（文字不会居中）    当指定tr  或者td  文字居中<br>colspan:列合并<br>rowspan：行合并     </p>
-<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>无序列表<br>  <code>&lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;</code><br>有序列表<br>  <code>&lt;ol&gt;&lt;li&gt;&lt;/li&gt;&lt;/ol&gt;</code><br>自定义列表<br>  <code>&lt;dl&gt;&lt;dt&gt;&lt;/dt&gt;&lt;dd&gt;&lt;/dd&gt;&lt;/dl&gt;</code></p>
-<h3 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h3><h4 id="input属性"><a href="#input属性" class="headerlink" title="input属性"></a>input属性</h4><p>1.text：文本框<br>2.password：密码框<br>3.radio：单选按钮<br>4.checkbox：复选框<br>5.button：普通按钮<br>6.reset：重置按钮  需要配合form表单才有作用<br>7.submit：提交按钮<br>8.image   属性  src<br>9.file 文件按钮   上传图片</p>
-<h4 id="name属性"><a href="#name属性" class="headerlink" title="name属性"></a>name属性</h4><p>1.发送后台……<br>2.name的标识 对于单选按钮  只能选择一个</p>
-<h4 id="value：文本框默认显示的文字"><a href="#value：文本框默认显示的文字" class="headerlink" title="value：文本框默认显示的文字"></a>value：文本框默认显示的文字</h4><h4 id="checked：默认选中"><a href="#checked：默认选中" class="headerlink" title="checked：默认选中"></a>checked：默认选中</h4><p> ．可以写一个属性   也可以 属性名=属性值</p>
-<h4 id="label用法"><a href="#label用法" class="headerlink" title="label用法"></a>label用法</h4><p>1.<code>&lt;label&gt;请输入 &lt;input type=&quot;text&quot;&gt; &lt;input type=&quot;text&quot;&gt;&lt;/label&gt;</code><br>2.<code>&lt;label for=&quot;a&quot;&gt;请输入&lt;/label&gt;</code><br>  <code>&lt;input type=&quot;text&quot; id=&quot;a&quot;&gt;</code></p>
-<h4 id="文本域：textarea：用户留言"><a href="#文本域：textarea：用户留言" class="headerlink" title="文本域：textarea：用户留言"></a>文本域：textarea：用户留言</h4><h4 id="下拉列表"><a href="#下拉列表" class="headerlink" title="下拉列表"></a>下拉列表</h4><pre class="line-numbers language-none"><code class="language-none">&lt;select&gt;
-&lt;option&gt;请选择&lt;&#x2F;option&gt;
-&lt;option &gt;苹果&lt;&#x2F;option&gt;
-&lt;option selected&gt;香蕉&lt;&#x2F;option&gt;
-&lt;option&gt;橘子&lt;&#x2F;option&gt;
-&lt;&#x2F;select&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>下拉列表的默认选中： selected</p>
-<h4 id="form表单"><a href="#form表单" class="headerlink" title="form表单"></a>form表单</h4><p>.主要的作用：是收集用户信息   发送后台<br>.action：  提交后台的地址<br>.method=”get/post”   提交（传输）后台的方式<br>.name =“a” 告诉服务器  由哪个表单提交过来的</p>
+                <h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2><h3 id="顺序表插入"><a href="#顺序表插入" class="headerlink" title="顺序表插入"></a>顺序表插入</h3><p>`#include <iostream><br>#include”windows.h”<br>using namespace std;</iostream></p>
+<p>#define TRUE 1<br>#define FALSE 0<br>#define MaxSize 20<br>typedef int ElemType;<br>typedef struct<br>{<br>    ElemType data[MaxSize];<br>    int length;<br>}SqList;</p>
+<p>bool InitList(SqList &amp;L)<br>{<br>    L.length = 0;<br>    return true;<br>}</p>
+<p>bool ListInsert(SqList &amp;L, int i, ElemType e) {<br>    if (i&lt;1 || i&gt;L.length)<br>        return false;<br>    if (L.length &gt;= MaxSize)<br>        return false;<br>    for (int j = L.length; j &gt;= i; j–)<br>        L.data[j] = L.data[j - 1];<br>    L.data[i - 1] = e;<br>    L.length++;<br>    return true;<br>}</p>
+<p>int main()<br>{<br>    int t,k;<br>    SqList L;<br>    InitList(L);<br>    cin &gt;&gt; t;<br>    for (k = 0; k &lt; t; k++)<br>        cin &gt;&gt; L.data[k];<br>    L.length = t;<br>    ListInsert(L, 2, 9);<br>    for (int n = 0; n &lt; L.length; n++)<br>        printf( “L.data[%d]=%d\n”,n , L.data[n]);<br>}`</p>
 
                 
             </div>
@@ -548,7 +524,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://maozhoufei.github.io/2021/06/20/HTML%E5%9F%BA%E7%A1%80/">http://maozhoufei.github.io/2021/06/20/HTML%E5%9F%BA%E7%A1%80/</a>
+                    <a href="http://maozhoufei.github.io/2021/07/19/%E9%A1%BA%E5%BA%8F%E8%A1%A8%E6%8F%92%E5%85%A5/">http://maozhoufei.github.io/2021/07/19/%E9%A1%BA%E5%BA%8F%E8%A1%A8%E6%8F%92%E5%85%A5/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -586,12 +562,20 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/web%E5%89%8D%E7%AB%AF/">
-                                    <span class="chip bg-color">web前端</span>
+                                <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+                                    <span class="chip bg-color">数据结构</span>
                                 </a>
                             
-                                <a href="/tags/html/">
-                                    <span class="chip bg-color">html</span>
+                                <a href="/tags/c-c/">
+                                    <span class="chip bg-color">c/c++</span>
+                                </a>
+                            
+                                <a href="/tags/%E9%A1%BA%E5%BA%8F%E8%A1%A8/">
+                                    <span class="chip bg-color">顺序表</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%8F%92%E5%85%A5/">
+                                    <span class="chip bg-color">插入</span>
                                 </a>
                             
                         </div>
@@ -763,9 +747,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/07/19/%E9%A1%BA%E5%BA%8F%E8%A1%A8%E6%8F%92%E5%85%A5/">
                     <div class="card-image">
@@ -783,9 +768,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-19
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-19
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -798,6 +783,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -828,13 +814,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/06/16/hello-world/">
+                <a href="/2021/06/20/HTML%E5%9F%BA%E7%A1%80/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="HTML基础">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">HTML基础</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -845,15 +831,31 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-20
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            毛周斐
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/HTML/" class="post-category">
+                                    HTML
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/web%E5%89%8D%E7%AB%AF/">
+                        <span class="chip bg-color">web前端</span>
+                    </a>
+                    
+                    <a href="/tags/html/">
+                        <span class="chip bg-color">html</span>
+                    </a>
+                    
                 </div>
                 
             </div>
